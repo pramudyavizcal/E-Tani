@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "868455776706",
+    "firebase_url": "https://e-tani.firebaseio.com",
+    "project_id": "e-tani",
+    "storage_bucket": "e-tani.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868455776706:android:9280ee1030c3d1db73965b",
+        "android_client_info": {
+          "package_name": "com.pramudya.e_tani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868455776706-6rkl5sm2jg2sgr8043c34q0t08reoqbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUOheGP97qNkAPkDlAkt2TXwkEfmD11h8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868455776706-6rkl5sm2jg2sgr8043c34q0t08reoqbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

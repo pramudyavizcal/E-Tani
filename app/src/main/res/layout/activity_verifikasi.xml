@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attribute="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/background_png"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/topText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="25dp"
+            android:fontFamily="@font/breeserif_regular"
+            android:text="Untuk melanjutkan silakan verifikasi nomor telepon yang anda gunakan ! "
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lvutama"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:text="Masukan Nomor HP (*pastikan diawali dengan kode negara)"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtnohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/background_edit_text"
+            android:hint="Contoh : +6281"
+            android:inputType="phone"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/btnverif"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background"
+            android:text="Verifikasi" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/lv2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Masukan Kode 6 Digit"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/edt1"
+                android:inputType="number"
+                android:background="@drawable/edittext_background"
+                android:layout_margin="20dp"
+                android:maxLength="1"
+                android:hint="*"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/edt2"
+                android:maxLength="1"
+                android:inputType="number"
+                android:hint="*"
+                android:background="@drawable/edittext_background"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/edt3"
+                android:inputType="number"
+                android:hint="*"
+                android:maxLength="1"
+                android:background="@drawable/edittext_background"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/edt4"
+                android:inputType="number"
+                android:maxLength="1"
+                android:hint="*"
+                android:background="@drawable/edittext_background"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/edt5"
+                android:inputType="number"
+                android:maxLength="1"
+                android:hint="*"
+                android:background="@drawable/edittext_background"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:id="@+id/edt6"
+                android:inputType="number"
+                android:maxLength="1"
+                android:hint="*"
+                android:background="@drawable/edittext_background"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:text="Kirim Ulang Kode"
+            android:id="@+id/btnkirimulang"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="00"
+            android:id="@+id/timer"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_marginTop="10dp"
+            android:text="Verifikasi"
+            android:id="@+id/btnverifkode"
+            android:layout_gravity="center"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>
